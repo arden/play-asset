@@ -1,0 +1,13 @@
+# This file defines all module routes (Higher priority routes first)
+#
+# import these routes in the main app as :
+# *     /                       module:asset
+#
+# ~~~~
+
+GET      /asset/js/clear         asset.Asset.clearJSCache
+GET      /asset/js/{key}         asset.Asset.getCompressedJS
+GET      /asset/js/single/{key}  asset.Asset.getSingleCompressedJS
+GET      /asset/css/clear        asset.Asset.clearCSSCache
+GET      /asset/css/{key}        asset.Asset.getCompressedCSS
+GET      /asset/css/single/{key} asset.Asset.getSingleCompressedCSS
